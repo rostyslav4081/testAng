@@ -1,0 +1,36 @@
+[{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com",
+      "phone": "123456789"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane@example.com",
+      "phone": "987654321"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "orderNumber": "ABC123",
+      "creationDate": "2024-02-01T12:00:00Z",
+      "value": 100,
+      "status": "new",
+      "customerId": 1
+    },
+    {
+      "id": 2,
+      "orderNumber": "XYZ789",
+      "creationDate": "2024-02-02T14:30:00Z",
+      "value": 150,
+      "status": "accepted",
+      "customerId": 1
+    }
+  ]
+}]
