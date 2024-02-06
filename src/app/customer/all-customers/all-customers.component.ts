@@ -11,14 +11,15 @@ import {CustomerService} from "../services/customer.service";
   styleUrls: ['./all-customers.component.css']
 })
 export class AllCustomersComponent implements OnInit {
-  @Input()
-  customers: Customer[]=[];
+
+  customers: Customer[];
 
   constructor(private customerServices: CustomerService){
-
+    this.customers=[];
+    this.customerServices.getAllCustomers().subscribe((data)=>{this.customers=data})
   }
   ngOnInit() {
-    this.customerServices.getAllCustomers().subscribe((data)=>{this.customers=data})
+
   }
 
 

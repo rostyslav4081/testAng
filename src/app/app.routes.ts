@@ -6,9 +6,9 @@ import {AllCustomersComponent} from "./customer/all-customers/all-customers.comp
 
 
 export const routes: Routes = [
-  { path: 'all-customers', component: AllCustomersComponent },
-  { path: 'all-orders', component: AllOrdersComponent },
-  { path: '', redirectTo: '/all-customers', pathMatch: 'full' }
+  { path: 'customers', component: AllCustomersComponent },
+  { path: 'orders', component: AllOrdersComponent },
+  { path: '', redirectTo: '/customers', pathMatch: 'full' }
 ];
 
 @NgModule({

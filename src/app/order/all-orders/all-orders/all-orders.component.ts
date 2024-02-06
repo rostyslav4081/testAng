@@ -8,12 +8,16 @@ import { Order } from "../../models/Order";
   styleUrls: ['./all-orders.component.css']
 })
 export class AllOrdersComponent implements OnInit {
-  orders: Order[]=[];
+  orders: Order[];
 
-  constructor(private orderService: OrderService) { }
+  constructor(private orderService: OrderService) {
+    this.orders=[];
+    this.loadOrders();
+
+  }
 
   ngOnInit(): void {
-    this.loadOrders();
+
   }
 
   loadOrders(): void {

@@ -10,7 +10,7 @@ import {Customer} from "../models/customer";
 
 export class CustomerComponent {
 
-  @Input()
+
   customer: Customer | undefined;
 
 

@@ -8,7 +8,7 @@ import {Order} from "../models/Order";
   templateUrl: './order.component.html'
 })
 export class OrderComponent implements  OnInit{
-
+ 
   @Input() order!: Order;
   constructor() {
 
